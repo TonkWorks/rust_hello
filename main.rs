@@ -1,13 +1,10 @@
 mod metrics;
+use metrics::Metrics;
 
 fn main() {
-    // Add some messages to the buffer
-    // METRICS.add_message("First message");
-    // METRICS.add_message("Second message");
-    // METRICS.add_message("Third message");
-    metrics::Metrics::add_message("First, World!");
-    metrics::Metrics::add_message("Second, World!");
-    metrics::Metrics::add_message("Third, World!");
+    Metrics::add_message("First, World!");
+    Metrics::add_message("Second, World!");
+    Metrics::add_message("Third, World!");
 
-    metrics::Metrics::print_messages();
+    Metrics::print_messages();
 }
